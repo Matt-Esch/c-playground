@@ -1,4 +1,4 @@
-#include <math.h>
+#include "math/ansi_math.h"
 #include "calc.h"
 
 typedef double (*binary)(const double, const double);
@@ -29,7 +29,7 @@ static double divide(const double a, const double b) {
 }
 
 static double power(const double a, const double b) {
-    return pow(a, b);
+    return math.pow(a, b);
 }
 
 static double increment(const double a) {

@@ -12,7 +12,7 @@ int main(void) {
         calc.applyb(calc.multiply, 1.4, 7.9));
     printf("apply divide with %f and %f: %f\n", 100.0, 2.5,
         calc.applyb(calc.divide, 100.0, 2.5));
-    printf("apply expf from math with %f and %f: %f\n", 2.0, 3.14159265359,
+    printf("apply pow from math with %f and %f: %f\n", 2.0, 3.14159265359,
         calc.applyb(calc.power, 2.0, 3.14159265359));
     return 1;
 }
