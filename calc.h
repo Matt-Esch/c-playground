@@ -1,6 +1,6 @@
 typedef struct {
-    double (*applyb)(binary, const double, const double);
-    double (*applyu)(unary, const double);
+    double (*applyb)(double (*)(double, double), const double, const double);
+    double (*applyu)(double (*)(double), const double);
     double (*add)(const double, const double);
     double (*subtract)(const double, const double);
     double (*multiply)(const double, const double);
