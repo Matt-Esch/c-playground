@@ -1,6 +1,9 @@
 #include <math.h>
 #include "calc.h"
 
+typedef double (*binary)(const double, const double);
+typedef double (*unary)(const double);
+
 static double applyb(const binary op, const double a, const double b) {
     return op(a, b);
 }
